@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bemvindo {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.bemvindo h1 {
+    font-size: 3em;
+}
+
+.bemvindo p {
+    font-size: 1.5em;
+}
+
+.bemvindo button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-produto {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.item-produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-produto h3 {
+    font-size: 1.2em;
+}
+
+.item-produto p {
+    font-size: 1em;
+    color: #333;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carrossel input {
+    display: none;
+}
+
+.carrossel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel-slides img {
+    min-width: 100%;
+    height: auto;
+}
+
+.carrossel-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.carrossel-nav label {
+    background: #ccc;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+.carrossel-nav label:hover,
+.carrossel-nav label:focus {
+    background: #333;
+}
+
+#carrossel-1:checked ~ .carrossel-slides {
+    transform: translateX(0%);
+}
+
+#carrossel-2:checked ~ .carrossel-slides {
+    transform: translateX(-100%);
+}
+
+#carrossel-3:checked ~ .carrossel-slides {
+    transform: translateX(-200%);
+}
+
+.mapa {
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.container {
+    margin-bottom: -60px; 
+    padding-bottom: 60px;
+}
