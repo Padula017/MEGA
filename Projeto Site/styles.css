@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    flex: 1;
+}
+
+header {
+    background: #1e7e34;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bemvindo {
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.bemvindo h1 {
+    font-size: 3em;
+    color: black;
+}
+
+.bemvindo p {
+    font-size: 1.5em;
+    color: black;
+}
+
+.produtos {
+    padding: 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.lista-produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-produto {
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 3%;
+    width: 200px;
+}
+
+.item-produto img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.item-produto h3 {
+    font-size: 1.2em;
+}
+
+.item-produto p {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.produtos button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #c82333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.sobre {
+    text-align: center;
+    padding: 20px;
+}
+
+.sobre img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.sobre h2 {
+    font-size: 2.5em;
+}
+
+.sobre p {
+    font-size: 1.2em;
+}
+
+.mapa {
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.mapa-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mapa-conteudo iframe {
+    width: 45%;
+    border-radius: 8px;
+}
+
+.contato {
+    width: 45%;
+    text-align: left;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+}
+
+.contato p {
+    margin: 10px 0;
+}
+
+.contato .icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer {
+    background: #1e7e34;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .mapa-conteudo {
+        flex-direction: column;
+    }
+
+    .mapa-conteudo iframe, .contato {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bemvindo h1 {
+        font-size: 2em;
+    }
+
+    .bemvindo p {
+        font-size: 1.2em;
+    }
+}
